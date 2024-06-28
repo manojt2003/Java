@@ -1,18 +1,17 @@
+import java.util.Arrays;
+
 public class countnum {
 
     public static void main(String[] args) {
-        int n=554136584;
 
-        int count=0;
-        while (n>0){
-            int r =n%10;
-            if (r==4){
-                count++;
-            }
-            n=n/10;
-        }
+        int[] arr={1,2,3,45,6};
+        change(arr);
+        System.out.println(Arrays.toString(arr));
 
-        System.out.println(count);
+    }
+
+    static void change(int[] num) {
+        num[0]= 77;
+
     }
 }
-
